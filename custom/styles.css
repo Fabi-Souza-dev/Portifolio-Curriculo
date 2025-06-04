@@ -29,9 +29,13 @@ a {
     padding: 2rem 1rem;
     color: var(--cor--fonte--secundaria);
 }
-ul{
-    text-decoration: none;
+
+.cabecalho__menu{
+    color: var(--cor--fundo);
+    text-decoration: none !important;
 }
+
+
 
 .cabecalho {
     background-color: var(--cor--secundaria);
