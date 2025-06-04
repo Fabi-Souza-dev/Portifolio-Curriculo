@@ -4,8 +4,8 @@
 :root {
     --cor--primaira: #FFF2F2;
     --cor--secundaria: #E8E8E8;
-    --cor--fonte--secundaria: #495464;
-    --cor--fundo: #495464;
+    --cor--fonte--secundaria: #94B4C1;
+    --cor--fundo: #2f4052;
     --fonte--principal: "Inter", sans-serif;
 }
 
@@ -29,12 +29,15 @@ a {
     padding: 2rem 1rem;
     color: var(--cor--fonte--secundaria);
 }
+ul{
+    text-decoration: none;
+}
 
 .cabecalho {
     background-color: var(--cor--secundaria);
     color: var(--cor--primaira);
     text-align: center;
-    padding: 1rem;
+    padding: 0.7rem;
     font-size: 0.9rem;
 }
 
@@ -55,7 +58,7 @@ a {
 
 .perfil__info {
     background-color: var(--cor--secundaria);
-    color: var(--cor--fonte--secundaria);
+    color: var(--cor--fundo);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -64,8 +67,9 @@ a {
 }
 
 /* Espaçamento entre seções */
-section, .container, .how-it-works {
-    margin-top: 3rem;
+section,
+.container,
+.how-it-works {
     margin-bottom: 3rem;
 }
 
@@ -116,7 +120,7 @@ section, .container, .how-it-works {
     background-color: var(--cor--secundaria);
     border-radius: 10px;
     padding: 1.5rem;
-    color: var(--cor--fonte--secundaria);
+    color: var(--cor--fundo);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
@@ -185,66 +189,34 @@ section, .container, .how-it-works {
 
 /* Media Queries */
 
-/* Tablets */
 @media (max-width: 768px) {
     .perfil {
-        grid-template-rows: auto auto;
-        height: auto;
+        margin-bottom: 2rem !important;
     }
 
-    .perfil__info {
-        padding: 1.5rem;
-        text-align: center;
-    }
-
-    .perfil__foto {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .secundario {
-        flex-direction: column;
-        padding: 2rem 1rem;
-    }
-
-    .container__descricao {
-        padding: 0;
-        text-align: center;
+    .texto_formacao {
+        width: 100% !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .how-it-works__container {
         flex-direction: column;
         align-items: center;
     }
-
-    .how-it-works__card {
-        width: 90%;
-    }
 }
 
-/* Celulares */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .perfil__info {
         padding: 1rem;
     }
 
-    .perfil__foto {
-        max-width: 90%;
-    }
-
-    .container {
+    .how-it-works {
         padding: 2rem 1rem;
-    }
-
-    .container__texto__profissional {
-        padding: 1rem;
-    }
-
-    .profissional__titulo {
-        font-size: 1.5rem;
     }
 
     .how-it-works__card {
         width: 100%;
+        max-width: 90vw;
     }
 }
